@@ -1,8 +1,9 @@
-import { createFilter } from 'rollup-pluginutils';
-import postcss from 'postcss';
-import styleInject from 'style-inject';
-import path from 'path';
-import fs from 'fs';
+const
+  createFilter = require('rollup-pluginutils'),
+  postcss      = require('postcss'),
+  styleInject  = require('style-inject'),
+  path         = require('path'),
+  fs           = require('fs')
 
 function cwd(file) {
   return path.join(process.cwd(), file);
